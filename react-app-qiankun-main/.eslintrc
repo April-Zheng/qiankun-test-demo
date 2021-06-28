@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint-config-tencent",
+    "react-app",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "printWidth": 80,
+        "tabWidth": 2,
+        "endOfLine": "auto"
+      }
+    ],
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "array-callback-return": "off",
+    "@typescript-eslint/no-redeclare": "off"
+  }
+}
