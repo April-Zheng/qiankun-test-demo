@@ -1,5 +1,5 @@
 import { IMicroApps } from "./type";
-import { getGolbalState } from "./actions";
+import { getGlobalState } from "./actions";
 
 const MicroApps: IMicroApps[] = [
   { name: "reactapp", entry: "http://localhost:3001/" },
@@ -16,7 +16,7 @@ const getMicroApps = () => {
       container: "#subapp-viewport",
       activeRule: item?.activeRule || item.name,
       props: {
-        getGolbalState,
+        getGlobalState,
       },
     };
   });

@@ -10,8 +10,6 @@ module.exports = {
     config.output.jsonpFunction = `webpackJsonp_${name}`
     config.output.globalObject = 'window'
 
-   
-
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': resolve(__dirname, '.', 'src'),

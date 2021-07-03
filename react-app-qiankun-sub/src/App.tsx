@@ -11,11 +11,11 @@ interface IProps {
 }
 
 function App(props: IProps) {
-  const { baseName, onGlobalStateChange, setGlobalState, getGolbalState } =
+  const { baseName, onGlobalStateChange, setGlobalState, getGlobalState } =
     props
 
   const [internalGlobalState, setInternalGlobalState] = useState(() => {
-    return getGolbalState?.()
+    return getGlobalState?.()
   })
 
   useEffect(() => {
